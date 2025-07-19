@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #e0f7fa, #f1f8ff);
+  min-height: 100vh;
+  font-family: 'Fredoka', sans-serif;
+}
