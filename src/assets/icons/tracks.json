@@ -37,7 +37,7 @@
     },
     {
         "name": "Starview Peak",
-        "icon": "assets/star-cup/startview-peak.png"
+        "icon": "assets/star-cup/starview-peak.png"
     },
     {
         "name": "Sky-High Sundae (Mario Kart 8 Deluxe Booster Course Pass)",
@@ -93,19 +93,19 @@
     },
     {
         "name": "Moo Moo Meadows (Mario Kart Wii)",
-        "icon": "assets/lighning-cup/moo-moo-meadows.png"
+        "icon": "assets/lightning-cup/moo-moo-meadows.png"
     },
     {
         "name": "Choco Mountain (Mario Kart 64)",
-        "icon": "assets/lighning-cup/choco-mountain.png"
+        "icon": "assets/lightning-cup/choco-mountain.png"
     },
     {
         "name": "Toad's Factory (Mario Kart Wii)",
-        "icon": "assets/lighning-cup/toads-factory.png"
+        "icon": "assets/lightning-cup/toads-factory.png"
     },
     {
         "name": "Bowser's Castle",
-        "icon": "assets/lighning-cup/bowsers-castle.png"
+        "icon": "assets/lightning-cup/bowsers-castle.png"
     },
     {
         "name": "Acorn Heights",
