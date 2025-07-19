@@ -1,7 +1,9 @@
-<p>track-list works!</p>
+<section class="track-list-wrapper">
+  <h2>🏁 There are {{ tracks().length }} tracks available!</h2>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
-  @for (track of tracks(); track track) {
-    <app-track-display [track]="track" />
-  }
-</div>
+  <div class="track-grid">
+    @for (track of tracks(); track track) {
+      <app-track-display [track]="track" />
+    }
+  </div>
+</section>

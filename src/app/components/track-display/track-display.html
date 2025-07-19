@@ -1,8 +1,9 @@
-<img
-  [ngSrc]="track()!.icon"
-  width="32"
-  height="32"
-  alt="{{ track().name }}"
-  class="rounded"
-/>
-<span>{{ track().name }}</span>
+<div class="track-card">
+  <img
+    [ngSrc]="track()!.icon"
+    width="240"
+    height="160"
+    alt="{{ track().name }}"
+  />
+  <span>{{ track().name }}</span>
+</div>

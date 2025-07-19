@@ -1,3 +1,21 @@
-:host {
-  display: block;
+.track-list-wrapper {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #e0f7fa, #f1f8ff);
+  min-height: 100vh;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1b1b1b;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff, 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.track-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
 }
