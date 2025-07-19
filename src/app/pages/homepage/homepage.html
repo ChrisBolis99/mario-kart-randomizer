@@ -1,0 +1,24 @@
+<section>
+  <label>
+    Number of Courses to Pick:
+    <input
+      type="number"
+      min="1"
+      [ngModel]="numberOfCoursesToPick()"
+      (ngModelChange)="numberOfCoursesToPick.set($event)"
+    />
+  </label>
+
+  <label>
+    <input
+      type="checkbox"
+      [ngModel]="allowDuplicates()"
+      (ngModelChange)="allowDuplicates.set($event)"
+    />
+    Allow duplicate tracks
+  </label>
+
+  <button (click)="onSubmit()">
+    Pick random courses
+  </button>
+</section>
