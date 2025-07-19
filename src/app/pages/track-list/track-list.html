@@ -1,5 +1,11 @@
 <section class="track-list-wrapper">
-  <h2>🏁 There are {{ tracks().length }} tracks available!</h2>
+  <div class="back-button-container">
+    <button type="button" routerLink="/">
+      ← Back to home
+    </button>
+  </div>
+
+  <h2>🏁 There are {{ tracks().length }} courses available!</h2>
 
   <div class="track-grid">
     @for (track of tracks(); track track) {

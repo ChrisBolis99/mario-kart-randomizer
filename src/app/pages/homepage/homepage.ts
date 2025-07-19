@@ -1,11 +1,11 @@
 import { Component, inject, signal, WritableSignal } from '@angular/core';
 import { CoursePickerConfig } from '../../models/course-picker-config';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterModule],
   templateUrl: './homepage.html',
   styleUrl: './homepage.scss'
 })

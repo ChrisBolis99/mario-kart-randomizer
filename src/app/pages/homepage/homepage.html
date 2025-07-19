@@ -1,27 +1,31 @@
 <h1 class="title">Mario Kart World <br />Random Course Picker</h1>
 
 <section>
-    <label>
-        Number of Courses to Pick:
-        <input
-        type="number"
-        min="1"
-        [ngModel]="numberOfCoursesToPick()"
-        (ngModelChange)="numberOfCoursesToPick.set($event)"
-        />
-    </label>
-
-    <div class="checkbox-row">
+  <label>
+    Number of Courses to Pick:
     <input
-        type="checkbox"
-        id="allowDuplicates"
-        [ngModel]="allowDuplicates()"
-        (ngModelChange)="allowDuplicates.set($event)"
+      type="number"
+      min="1"
+      [ngModel]="numberOfCoursesToPick()"
+      (ngModelChange)="numberOfCoursesToPick.set($event)"
+    />
+  </label>
+
+  <div class="checkbox-row">
+    <input
+      type="checkbox"
+      id="allowDuplicates"
+      [ngModel]="allowDuplicates()"
+      (ngModelChange)="allowDuplicates.set($event)"
     />
     <label for="allowDuplicates">Allow duplicate tracks</label>
-    </div>
+  </div>
 
-    <button (click)="onSubmit()">
-        Pick random courses
-    </button>
+  <button (click)="onSubmit()">
+    Pick random courses
+  </button>
+
+  <button type="button" routerLink="/list" class="secondary-button">
+    Show available courses
+  </button>
 </section>

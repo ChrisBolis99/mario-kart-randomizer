@@ -19,3 +19,21 @@
   gap: 2rem;
   justify-items: center;
 }
+
+.back-button-container {
+  margin-bottom: 1.5rem;
+
+  button {
+    background-color: #ffcc80;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #ffa726;
+    }
+  }
+}
