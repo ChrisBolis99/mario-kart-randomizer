@@ -46,6 +46,12 @@ export class PickedCoursesList {
   private pickRandomTracks(all: Track[], count: number, allowDuplicates: boolean) {
     const selected: Track[] = [];
 
+
+    if (!allowDuplicates && count > all.length) {
+      console.warn(`Requested ${count} unique tracks, but only ${all.length} available. Limiting to ${all.length}.`);
+      count = all.length;
+    }
+
     while (selected.length < count) {
       const random = all[Math.floor(Math.random() * all.length)];
       if (allowDuplicates || !selected.includes(random)) {
