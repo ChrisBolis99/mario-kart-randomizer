@@ -1,16 +1,22 @@
 @if (currentTrack()) {
-  <section>
+  <section class="track-view">
     <p class="progress-label">
       Course {{ currentIndex() + 1 }} of {{ totalCourses() }}
     </p>
 
     <app-track-display [track]="currentTrack()" />
 
-    <button (click)="next()">Next</button>
+    <div class="button-group vertical">
+      <button class="next-button" (click)="next()">Next</button>
+      <button class="home-button" routerLink="/">← Back to home</button>
+    </div>
   </section>
 } @else {
-  <section>
-    <p>🎉 All tracks selected!</p>
-    <button routerLink="/">Pick Again</button>
+  <section class="track-complete">
+    <p class="complete-message">🎉 All tracks selected!</p>
+
+    <div class="button-group vertical">
+      <button class="home-button" routerLink="/">← Back to home</button>
+    </div>
   </section>
 }
