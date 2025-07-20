@@ -13,6 +13,14 @@
   font-weight: 600;
 }
 
+.track-card-wrapper {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .button-group.vertical {
   display: flex;
   flex-direction: column;

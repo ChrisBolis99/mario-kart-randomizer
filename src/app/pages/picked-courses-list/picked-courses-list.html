@@ -4,7 +4,9 @@
       Course {{ currentIndex() + 1 }} of {{ totalCourses() }}
     </p>
 
-    <app-track-display [track]="currentTrack()" />
+    <div class="track-card-wrapper">
+      <app-track-display [track]="currentTrack()" />
+    </div>
 
     <div class="button-group vertical">
       <button class="next-button" (click)="next()">Next</button>
