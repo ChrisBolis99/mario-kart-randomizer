@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build-ghpages": "ng build --output-path dist --base-href=/mario-kart-randomizer/",
     "deploy-ghpages-windows": "ng build --output-path docs --base-href=/mario-kart-randomizer/ && xcopy docs\\browser\\* docs /s /e /y",
     "deploy-ghpages-unix": "ng build --output-path docs --base-href=/mario-kart-randomizer/ && cp -r docs/browser/* docs/"
   },
