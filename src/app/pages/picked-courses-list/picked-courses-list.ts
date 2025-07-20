@@ -1,9 +1,9 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { TrackService } from '../../services/track';
 import { CoursePickerConfig } from '../../models/course-picker-config';
 import { Track } from '../../models/track.model';
 import { TrackDisplay } from '../../components/track-display/track-display';
+import { TrackService } from '../../services/track-service';
 
 @Component({
   selector: 'app-picked-courses-list',

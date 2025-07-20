@@ -1,8 +1,8 @@
 import { Component, effect, signal } from '@angular/core';
 import { Track } from '../../models/track.model';
-import { TrackService } from '../../services/track';
 import { TrackDisplay } from '../../components/track-display/track-display';
 import { RouterModule } from '@angular/router';
+import { TrackService } from '../../services/track-service';
 
 @Component({
   selector: 'app-track-list',
