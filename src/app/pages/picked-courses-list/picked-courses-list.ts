@@ -46,6 +46,10 @@ export class PickedCoursesList {
   private pickRandomTracks(all: Track[], count: number, allowDuplicates: boolean) {
     const selected: Track[] = [];
 
+    if (count <= 0) {
+      alert(`You must select at least 1 course. Defaulting to 1.`);
+      count = 1;
+    }
 
     if (!allowDuplicates && count > all.length) {
       alert(`You requested ${count} unique tracks, but only ${all.length} are available. Picking ${all.length} instead.`);
