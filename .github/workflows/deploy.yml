@@ -25,13 +25,13 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build-ghpages
+        run: npm run build -- --configuration production --base-href=/mario-kart-randomizer/
 
       - name: Add .nojekyll
-        run: echo "" > dist/browser/.nojekyll
+        run: echo "" > dist/mario-kart-randomizer/browser/.nojekyll
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/browser
+          publish_dir: ./dist/mario-kart-randomizer/browser
