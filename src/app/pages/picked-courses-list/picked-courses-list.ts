@@ -48,7 +48,7 @@ export class PickedCoursesList {
 
 
     if (!allowDuplicates && count > all.length) {
-      console.warn(`Requested ${count} unique tracks, but only ${all.length} available. Limiting to ${all.length}.`);
+      alert(`You requested ${count} unique tracks, but only ${all.length} are available. Picking ${all.length} instead.`);
       count = all.length;
     }
 
