@@ -4,10 +4,12 @@
   <label>
     Number of Courses to Pick:
     <input
+      #courseInput
       type="number"
       min="1"
       [ngModel]="numberOfCoursesToPick()"
       (ngModelChange)="numberOfCoursesToPick.set($event)"
+      (blur)="validateCourseCount()"
     />
   </label>
 
